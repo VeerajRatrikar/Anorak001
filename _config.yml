@@ -16,10 +16,10 @@ timezone: Asia/Kolkata
 
 title: ANORAK WRITES # the main title
 
-tagline: blog # it will display as the sub-title
+tagline: Cybersecurity, Programming and Beyond # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimalistic blog with rich content covering all the topics and mainly focused on cybersecurity
+  A minimalistic blog with rich content covering all tech topics and mainly focused on cybersecurity.
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.

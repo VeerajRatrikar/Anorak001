@@ -13,15 +13,9 @@
   icon: "fa fa-linkedin"
   noblank: true 
 
-- type: stack-overflow
-  icon: "fab fa-stack-overflow"
-  url: "https://stackoverflow.com/users/23473994/manthan-r-m"
-
 - type: discord
   icon: "fa-brands fa-discord"
-  url: "https://discord.com/users/123456789012345678" # Replace with correct format if needed
+  url: "https://discord.com/users/Darksouls001" # Replace with correct format if needed
 
-- type: Medium
-  icon: "fa-brands fa-medium"
-  url: "https://medium.com/@darkcode673"
+
 

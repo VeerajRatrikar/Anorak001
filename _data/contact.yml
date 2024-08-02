@@ -1,28 +1,27 @@
 #  The contact options.
 
-- type: github
+- type: Github
   icon: "fab fa-github"
 
-- type: twitter
+- type: Twitter
   icon: "fa-brands fa-x-twitter"
 
-- type: email
+- type: Email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
 
-- type: rss
-  icon: "fas fa-rss"
+- type: Linkedin
+  icon: "fa fa-linkedin"
   noblank: true
-# Uncomment and complete the url below to enable more contact options
-#
-# - type: mastodon
-#   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
-#   url:  ''                  # Fill with your Mastodon account page, rel="me" will be applied for verification
-#
-# - type: linkedin
-#   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-#   url:  ''                  # Fill with your Linkedin homepage
-#
-# - type: stack-overflow
-#   icon: 'fab fa-stack-overflow'
-#   url:  ''                  # Fill with your stackoverflow homepage
+  
+- type: stack-overflow
+   icon: 'fab fa-stack-overflow'
+   url:  'https://stackoverflow.com/users/23473994/manthan-r-m' 
+
+- type: Discord
+  icon: "fa-brands fa-discord"
+  url: "https://discord.com/users/Darksouls001#4381"
+- type: Medium
+  icon: "fa-brands fa-medium"
+  url: "https://medium.com/@darkcode673"
+

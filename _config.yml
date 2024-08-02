@@ -25,6 +25,11 @@ description: >- # used by seo meta and the atom feed
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
 url: "https://Anorak001.github.io"
 
+github:
+  username: Anorak001 # change to your GitHub username
+
+twitter:
+  username: Legitcode_673 # change to your Twitter username
 
 social:
   # Change to your full name.
@@ -33,10 +38,11 @@ social:
   email: manthan57673@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-  
+    - https://twitter.com/Legitcode_673 # change to your Twitter homepage
+    - https://github.com/Anorak001 # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    - https://www.linkedin.com/in/manthan67323/ #linkedin username
+    # - https://www.linkedin.com/in/username
 
 # Site Verification Settings
 webmaster_verifications:

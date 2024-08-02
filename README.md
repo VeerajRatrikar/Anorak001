@@ -1,7 +1,7 @@
-### ANORAK WRITES
-## A blog website created for the purpose of sharing latest trends, news and other stuff related to the field of cybersecurity and programming
+# ANORAK WRITES
+### A blog website created for the purpose of sharing latest trends, news and other stuff related to the field of cybersecurity and programming
 
-## License
+### License
 
 This work is published under [MIT][mit] License.
 

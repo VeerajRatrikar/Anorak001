@@ -10,7 +10,7 @@
   noblank: true # open link in current tab
 
 - type: linkedin
-  icon: "fa fa-linkedin"
+  icon: "fa-brands fa-linkedin"
   noblank: true 
 
 - type: discord

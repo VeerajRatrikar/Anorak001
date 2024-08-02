@@ -1,25 +1,27 @@
-- type: Linkedin
-  icon: "fa fa-linkedin"
-  noblank: true
+#the contact options
+- type: github
+  icon: "fab fa-github"
 
-- type: Discord
-  icon: "fa-brands fa-discord"
-  url: "https://discord.com/users/Daksouls001" # Replace with correct format if needed
+- type: twitter
+  icon: "fa-brands fa-x-twitter"
 
-- type: Email
+- type: email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
 
+- type: linkedin
+  icon: "fa fa-linkedin"
+  noblank: true 
 
+- type: stack-overflow
+  icon: "fab fa-stack-overflow"
+  url: "https://stackoverflow.com/users/23473994/manthan-r-m"
 
-#    - type: stack-overflow
-#     icon: "fab fa-stack-overflow"
-#    url: "https://stackoverflow.com/users/23473994/manthan-r-m"
-#    
-#    - type: Discord
-#     icon: "fa-brands fa-discord"
-#      url: "https://discord.com/users/Daksouls001" # Replace with correct format if needed
-#    
-#    - type: Medium
-#     icon: "fa-brands fa-medium"
-#     url: "https://medium.com/@darkcode673"
+- type: discord
+  icon: "fa-brands fa-discord"
+  url: "https://discord.com/users/123456789012345678" # Replace with correct format if needed
+
+- type: Medium
+  icon: "fa-brands fa-medium"
+  url: "https://medium.com/@darkcode673"
+

@@ -55,8 +55,6 @@ webmaster_verifications:
 
 # ↑ --------------------------
 
- # Example config.yml section
-footer: "_includes/footer.html"
 
 
 # Web Analytics Settings

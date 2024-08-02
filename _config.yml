@@ -14,22 +14,22 @@ timezone: Asia/Kolkata
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Anorak Writes # the main title
+title: ANORAK WRITES # the main title
 
-tagline: A blog written by a Cybersec reasearcher and a average programmer # it will display as the sub-title
+tagline: blog # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimalistic blog with rich content covering all the topics and mainly focused on cybersecurity
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+url: "https://Anorak001.github.io"
 
 github:
   username: Anorak001 # change to your github username
 
 twitter:
-  username: twitter_username # change to your twitter username
+  username: Legitcode_673 # change to your twitter username
 
 social:
   # Change to your full name.
@@ -96,7 +96,7 @@ theme_mode: dark
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: 
+avatar: /assets/img/ANORAK.jpeg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.

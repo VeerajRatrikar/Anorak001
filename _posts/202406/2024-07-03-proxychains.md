@@ -56,7 +56,7 @@ pin: true
   
   11. Copy and paste the proxies in the format shown in the image:
       
-          ![List](/assets/img/202407/copynpaste.jpg){: width="1100" height="549" .w-75 .normal}
+       ![List](/assets/img/202407/copynpaste.jpg){: width="1100" height="549" .w-75 .normal}
   13. Save and close the file. Check if the connection is successful by using **ping** commmand:
 
         ```ping www.google.com```

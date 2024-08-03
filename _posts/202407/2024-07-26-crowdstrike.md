@@ -8,7 +8,7 @@ categories: [ROOT,NEWS,OUTAGE]
 tags: [Serious Issue]
 pin: false
 ---
-What might be considered the largest IT outage in history was triggered by a botched software update from security vendor CrowdStrike, affecting millions of Windows systems around the world. Insurers estimate the outage will cost U.S. Fortune 500 companies  **$ 5.4 B**.
+What might be considered the **largest IT outage** in history was triggered by a botched software update from security vendor CrowdStrike, affecting millions of Windows systems around the world. Insurers estimate the outage will cost U.S. Fortune 500 companies  **$ 5.4 B**.
 
 ## THE ISSUE:
 
@@ -36,10 +36,11 @@ What might be considered the largest IT outage in history was triggered by a bot
   
   With channel file 291, CrowdStrike inadvertently introduced a logic error, causing the Falcon sensor to crash and, subsequently, Windows systems in which it was integrated.
 
-- The flaw isn't in all versions of channel file 291. The problematic version is channel file 291 (**C-00000291*.sys**) with timestamp 2024-07-19 0409 UTC. Channel file 291 timestamped **2024-07-19 0527 UTC** or later does not have the logic flaw.
+- The flaw isn't in all versions of channel file 291. The problematic version is channel file 291 (**C-00000291*.sys**) with timestamp 2024-07-19 0409 UTC (Its FRIDAY!!). Channel file 291 timestamped **2024-07-19 0527 UTC** or later does not have the logic flaw.
   
 - By that time, CrowdStrike had noticed its error and reverted the change. But, for many of its users, that reversion came too late as they had already updated, leading to BSOD and inoperable systems.
-
+  
+- [Here}(https://www.crowdstrike.com/falcon-content-update-remediation-and-guidance-hub) is the detailed troubshooting steps for fixing the Windows BSOD.
 
 ## What services were affected?
 
@@ -68,10 +69,13 @@ But, despite the small percentage of the overall Windows install base, the syste
 - CrowdStrike's software doesn't just run on Microsoft Windows; it also runs on Apple's macOS and the Linux OS.But the July outage only affected Microsoft Windows. The root cause of the outage was a faulty sensor configuration update that specifically affected Windows systems. The channel file 291 update was never issued to macOS or Linux systems as the update deals with named pipe execution that only occurs on the Microsoft Windows OS.
 
 - The way that the Falcon sensor integrates as a Windows kernel process is also not the same in macOS or Linux. Those OSes have different integration points to limit potential risk.
+
 ![Linux Users](/assets/img/202407/linux_meme.webp){: width="800" height="400" .w-50 .right}
+
 - However, there was a [reported incident](https://access.redhat.com/solutions/7068083) in June from Linux vendor Red Hat, where the Falcon sensor, running as an eBPF program in Linux, triggered a kernel panic. In Linux, a kernel panic is a type of crash, though typically not as dramatic as BSOD. That issue was resolved without Red Hat reporting any major incidents.
 
 ## Final Thoughts:
+
 - Though the update which contained the bug was quickly installed within seconds,now the issue has to be fixed by deleting the file 291 (C-00000291*.sys) manually and troubleshooting it.This is where an IT worker has to manually go and fix the device individually which is a time consuming task.
   
 - Some businesses were able to apply the fix within a few days. However, the process was not straightforward for all, particularly those with extensive IT infrastructure and encrypted drives. The use of the Microsoft Windows BitLocker encryption technology by some organizations made it significantly more time-consuming to recover as BitLocker recovery keys were required.

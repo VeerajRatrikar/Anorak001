@@ -5,7 +5,7 @@ description: >-
 author: anorak
 date: 2024-07-25 00:35:00 +0530
 categories: [NEWS,OUTAGE]
-tags: [Serious Issue]
+tags: [Serious Issue,Cybersecurity]
 pin: false
 ---
 What might be considered the **largest IT outage** in history was triggered by a botched software update from security vendor CrowdStrike, affecting millions of Windows systems around the world. Insurers estimate the outage will cost U.S. Fortune 500 companies  **$ 5.4 B**.
@@ -47,7 +47,7 @@ What might be considered the **largest IT outage** in history was triggered by a
 
   ***
 
-### Why Apple and Linus were not affected:
+### Why Apple and Linux were not affected:
 
 - CrowdStrike's software doesn't just run on Microsoft Windows; it also runs on Apple's macOS and the Linux OS.But the July outage only affected Microsoft Windows. The root cause of the outage was a faulty sensor configuration update that specifically affected Windows systems. The channel file 291 update was never issued to macOS or Linux systems as the update deals with named pipe execution that only occurs on the Microsoft Windows OS.
 
@@ -76,7 +76,7 @@ But, despite the small percentage of the overall Windows install base, the syste
 
 ***
 
-## Hackers take the advantage of the Outage:
+## Hackers take advantage of the Outage:
 - While the outage was not due to a cyberattack, threat actors have taken advantage of the incident.
   According to a [blog](https://www.crowdstrike.com/blog/falcon-sensor-issue-use-to-target-crowdstrike-customers) post from CrowdStrike, the security vendor has received reports of the following malicious activity:
 

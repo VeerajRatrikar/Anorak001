@@ -20,6 +20,8 @@ What might be considered the largest IT outage in history was triggered by a bot
 
 ## What caused the outage?
 
+![Crowdstrike Falcon](assets/img/202408/crowdstrike.jpeg){: width="800" height="400" .w-50 .right}
+
 - The outage was not a Microsoft Windows flaw directly, but rather a flaw in CrowdStrike Falcon that triggered the issue.
   
 - CrowdStrike Falcon is a cloud-based endpoint protection platform developed by CrowdStrike. It is designed to detect, prevent, and respond to a wide range of cybersecurity threats and attacks.

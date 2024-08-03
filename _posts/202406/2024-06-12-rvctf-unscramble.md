@@ -9,7 +9,7 @@ tags: [Cryptography,Cybersecurity]
 pin: true
 ---
 
-#The Challenge:
+# The Challenge:
 - The task was pretty straightforward at first but the given java program made the challenge go haywire:
 
   
@@ -20,7 +20,9 @@ pin: true
 
 ### Java Code:
 - Below is the java code that was provided along with it:
+  
   ```
+  
             import java.util.Base64;
             import java.util.Scanner;
             
@@ -108,7 +110,7 @@ pin: true
                 }
               }
             
-            ```
+  ```
   
 # The Solution:
 

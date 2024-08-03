@@ -10,7 +10,7 @@ pin: false
 ---
 What might be considered the **largest IT outage** in history was triggered by a botched software update from security vendor CrowdStrike, affecting millions of Windows systems around the world. Insurers estimate the outage will cost U.S. Fortune 500 companies  **$ 5.4 B**.
 
-
+ 
 ## The Issue:
 
 - The outage occurred **July 19, 2024**, with millions of Windows systems failing and showing the infamous blue screen of death (BSOD).

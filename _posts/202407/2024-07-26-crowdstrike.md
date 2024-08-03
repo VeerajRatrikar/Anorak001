@@ -10,6 +10,7 @@ pin: false
 ---
 What might be considered the **largest IT outage** in history was triggered by a botched software update from security vendor CrowdStrike, affecting millions of Windows systems around the world. Insurers estimate the outage will cost U.S. Fortune 500 companies  **$ 5.4 B**.
 
+
 ## THE ISSUE:
 
 - The outage occurred **July 19, 2024**, with millions of Windows systems failing and showing the infamous blue screen of death (BSOD).
@@ -17,6 +18,8 @@ What might be considered the **largest IT outage** in history was triggered by a
 
 - In many respects, the outage was a real manifestation of fears that computing users had at the end of the last century with the Y2K bug. With Y2K, the fear was that a bug in software systems would trigger widespread technology failures. 
 - While the CrowdStrike failure was not Y2K, it was a software issue that did, in fact, trigger massive disruption on a scale that has not been seen before.
+  
+***
 
 ## What caused the outage?
 
@@ -42,6 +45,8 @@ What might be considered the **largest IT outage** in history was triggered by a
   
 - [Here}(https://www.crowdstrike.com/falcon-content-update-remediation-and-guidance-hub) is the detailed troubshooting steps for fixing the Windows BSOD.
 
+  ***
+
 ## What services were affected?
 
 - Microsoft estimated that approximately 8.5 million Windows devices were directly affected by the CrowdStrike logic error flaw. That's less than 1% of Microsoft's global Windows install base.
@@ -55,6 +60,9 @@ But, despite the small percentage of the overall Windows install base, the syste
   3. Financial Services
   4. Media and Broadcasting
 
+
+***
+
 ## Hackers take the advantage of the Outage:
 - While the outage was not due to a cyberattack, threat actors have taken advantage of the incident.
   According to a [blog](https://www.crowdstrike.com/blog/falcon-sensor-issue-use-to-target-crowdstrike-customers) post from CrowdStrike, the security vendor has received reports of the following malicious activity:
@@ -63,6 +71,8 @@ But, despite the small percentage of the overall Windows install base, the syste
   - Fake phone calls impersonating CrowdStrike staff.
   - Selling scripts claiming to automate recovery from the botched update.
   - Posing as independent researchers saying the outage was due to a cyberattack and offering remediation insights.
+
+***
 
 ## Why Apple and Linus were not affected:
 
@@ -73,6 +83,9 @@ But, despite the small percentage of the overall Windows install base, the syste
 ![Linux Users](/assets/img/202407/linux_meme.webp){: width="800" height="400" .w-50 .right}
 
 - However, there was a [reported incident](https://access.redhat.com/solutions/7068083) in June from Linux vendor Red Hat, where the Falcon sensor, running as an eBPF program in Linux, triggered a kernel panic. In Linux, a kernel panic is a type of crash, though typically not as dramatic as BSOD. That issue was resolved without Red Hat reporting any major incidents.
+
+
+***
 
 ## Final Thoughts:
 

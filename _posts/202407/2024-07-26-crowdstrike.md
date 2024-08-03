@@ -20,7 +20,7 @@ What might be considered the largest IT outage in history was triggered by a bot
 
 ## What caused the outage?
 
-![Crowdstrike Falcon](assets/img/202407/crowdstrike.jpeg){: width="800" height="400" .w-50 .right}
+![Crowdstrike Falcon](/assets/img/202407/crowdstrike.jpeg){: width="800" height="400" .w-50 .right}
 
 - The outage was not a Microsoft Windows flaw directly, but rather a flaw in CrowdStrike Falcon that triggered the issue.
   

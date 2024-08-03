@@ -11,7 +11,7 @@ pin: false
 What might be considered the **largest IT outage** in history was triggered by a botched software update from security vendor CrowdStrike, affecting millions of Windows systems around the world. Insurers estimate the outage will cost U.S. Fortune 500 companies  **$ 5.4 B**.
 
 
-## THE ISSUE:
+## The Issue:
 
 - The outage occurred **July 19, 2024**, with millions of Windows systems failing and showing the infamous blue screen of death (BSOD).
 - CrowdStrike, the company at the core of the outage, is an endpoint security vendor whose primary technology is the Falcon platform, which helps protect systems against potential threats in a bid to minimize cybersecurity risks.
@@ -21,7 +21,7 @@ What might be considered the **largest IT outage** in history was triggered by a
   
 ***
 
-## What caused the outage?
+### What caused the outage?
 
 ![Crowdstrike Falcon](/assets/img/202407/crowdstrike.jpeg){: width="800" height="400" .w-50 .right}
 
@@ -47,6 +47,19 @@ What might be considered the **largest IT outage** in history was triggered by a
 
   ***
 
+### Why Apple and Linus were not affected:
+
+- CrowdStrike's software doesn't just run on Microsoft Windows; it also runs on Apple's macOS and the Linux OS.But the July outage only affected Microsoft Windows. The root cause of the outage was a faulty sensor configuration update that specifically affected Windows systems. The channel file 291 update was never issued to macOS or Linux systems as the update deals with named pipe execution that only occurs on the Microsoft Windows OS.
+
+- The way that the Falcon sensor integrates as a Windows kernel process is also not the same in macOS or Linux. Those OSes have different integration points to limit potential risk.
+
+![Linux Users](/assets/img/202407/linux_meme.webp){: width="800" height="400" .w-50 .right}
+
+- However, there was a [reported incident](https://access.redhat.com/solutions/7068083) in June from Linux vendor Red Hat, where the Falcon sensor, running as an eBPF program in Linux, triggered a kernel panic. In Linux, a kernel panic is a type of crash, though typically not as dramatic as BSOD. That issue was resolved without Red Hat reporting any major incidents.
+
+
+***
+
 ## What services were affected?
 
 - Microsoft estimated that approximately 8.5 million Windows devices were directly affected by the CrowdStrike logic error flaw. That's less than 1% of Microsoft's global Windows install base.
@@ -71,19 +84,6 @@ But, despite the small percentage of the overall Windows install base, the syste
   - Fake phone calls impersonating CrowdStrike staff.
   - Selling scripts claiming to automate recovery from the botched update.
   - Posing as independent researchers saying the outage was due to a cyberattack and offering remediation insights.
-
-***
-
-## Why Apple and Linus were not affected:
-
-- CrowdStrike's software doesn't just run on Microsoft Windows; it also runs on Apple's macOS and the Linux OS.But the July outage only affected Microsoft Windows. The root cause of the outage was a faulty sensor configuration update that specifically affected Windows systems. The channel file 291 update was never issued to macOS or Linux systems as the update deals with named pipe execution that only occurs on the Microsoft Windows OS.
-
-- The way that the Falcon sensor integrates as a Windows kernel process is also not the same in macOS or Linux. Those OSes have different integration points to limit potential risk.
-
-![Linux Users](/assets/img/202407/linux_meme.webp){: width="800" height="400" .w-50 .right}
-
-- However, there was a [reported incident](https://access.redhat.com/solutions/7068083) in June from Linux vendor Red Hat, where the Falcon sensor, running as an eBPF program in Linux, triggered a kernel panic. In Linux, a kernel panic is a type of crash, though typically not as dramatic as BSOD. That issue was resolved without Red Hat reporting any major incidents.
-
 
 ***
 

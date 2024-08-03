@@ -47,7 +47,7 @@ What might be considered the largest IT outage in history was triggered by a bot
 
 But, despite the small percentage of the overall Windows install base, the systems affected were those running critical operations. Services affected include the following.
 
-![Airport_India](/assets/img/202407/crowdstrike_outage.webp){: width="800" height="400" .w-50 .right}
+![Airport_India](/assets/img/202407/crowdstrike_outage.webp){: width="600" height="400" .w-50 .right}
 
   1. Healthcare
   2. Airline and Airports
@@ -68,7 +68,7 @@ But, despite the small percentage of the overall Windows install base, the syste
 - CrowdStrike's software doesn't just run on Microsoft Windows; it also runs on Apple's macOS and the Linux OS.But the July outage only affected Microsoft Windows. The root cause of the outage was a faulty sensor configuration update that specifically affected Windows systems. The channel file 291 update was never issued to macOS or Linux systems as the update deals with named pipe execution that only occurs on the Microsoft Windows OS.
 
 - The way that the Falcon sensor integrates as a Windows kernel process is also not the same in macOS or Linux. Those OSes have different integration points to limit potential risk.
-
+![Linux Users](/assets/img/202407/linux_meme.webp){: width="800" height="400" .w-50 .right}
 - However, there was a [reported incident](https://access.redhat.com/solutions/7068083) in June from Linux vendor Red Hat, where the Falcon sensor, running as an eBPF program in Linux, triggered a kernel panic. In Linux, a kernel panic is a type of crash, though typically not as dramatic as BSOD. That issue was resolved without Red Hat reporting any major incidents.
 
 ## Final Thoughts:

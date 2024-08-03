@@ -42,8 +42,8 @@ pin: true
   8.  Uncomment the dynamic chain and comment out the strict chain by removing and replacing the # sign.
       ![gedit window](/assets/img/202407/chain.png){: width="1100" height="549" .w-75 .normal}
         
-   - **dynamic_chain** – Will create a new chain of proxies whenever a new connection is opened.
-   - **strict_chain** – Will only use the last chained proxy while opening every new connection.
+      - **dynamic_chain** – Will create a new chain of proxies whenever a new connection is opened.
+      - **strict_chain** – Will only use the last chained proxy while opening every new connection.
         So, in this case, we make the dynamic chain the default setting.
      
   9. Now search the web for websites that provide proxies, in this case, [proxyscrape](https://proxyscrape.com/free-proxy-list),

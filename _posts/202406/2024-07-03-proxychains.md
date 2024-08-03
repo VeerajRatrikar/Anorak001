@@ -18,41 +18,47 @@ pin: true
 
 ## Steps to Configure the Proxychain:
 
-1. Checking for dependencies:
+### Checking for dependencies:
    
   - The Configuration does not really require any large module or packages except *Proxychains* package.It comes preinstalled with KaliLinux.
   - However, if you are using any other Debian Flavours like Ubuntu, You can install it by running the following commmand:
     ```sudo apt install proxychains```
 
-2. Configuration:
+### Configuration:
    
-    1.  Open the terminal
-    2.  Firstly,we will navigate to the target directory where the ***proxychains4.conf*** is stored by running the command:
-    3.  Make a backup of the file by renaming ***proxychains4.conf** to ***proxychains4.conf.backup**
-      ``` cd /etc/ ```
-    4.  Open the configuratiion by using any text editor.I'm using the default text editor in Kali Linux (GEDIT).
+   1.  Open the terminal
+   2.  Firstly,we will navigate to the target directory where the ***proxychains4.conf*** is stored by running the command:
+   3.  Make a backup of the file by renaming ***proxychains4.conf** to ***proxychains4.conf.backup**
+    ``` cd /etc/ ```
+
+   5.  Open the configuratiion by using any text editor.I'm using the default text editor in Kali Linux (GEDIT).
       ``` gedit proxychains4.conf```
-    5.  In the Recently updated Kali Linux Distro[**2024.1**], The Configuration is being stored in *Proxychains4.conf* whereas in the previous versions, the configurations were stored under the name *Proxychains.conf*.
-    6.  The file when opened will Look like this:
+
+  6.  In the Recently updated Kali Linux Distro[**2024.1**], The Configuration is being stored in *Proxychains4.conf* whereas in the previous versions, the configurations were stored under the name *Proxychains.conf*.
+      
+  7.  The file when opened will Look like this:
       ![gedit window](/assets/img/202407/geditwindow.jpg){: width="1100" height="549" .w-75 .normal}
   
-    7.  Uncomment the dynamic chain and comment out the strict chain by removing and replacing the # sign.
+  8.  Uncomment the dynamic chain and comment out the strict chain by removing and replacing the # sign.
       ![gedit window](/assets/img/202407/chain.png){: width="1100" height="549" .w-75 .normal}
         
-     - **dynamic_chain** – Will create a new chain of proxies whenever a new connection is opened.
-     - **strict_chain** – Will only use the last chained proxy while opening every new connection.
+   - **dynamic_chain** – Will create a new chain of proxies whenever a new connection is opened.
+   - **strict_chain** – Will only use the last chained proxy while opening every new connection.
         So, in this case, we make the dynamic chain the default setting.
-    7. Now search the web for websites that provide proxies, in this case, [proxyscrape](https://proxyscrape.com/free-proxy-list),
+     
+  9. Now search the web for websites that provide proxies, in this case, [proxyscrape](https://proxyscrape.com/free-proxy-list),
        and select the protocol you want to use; HTTP and HTTPS were used for demonstration purposes, but SOCK5 or SOCKS 4 can also be used. Make as many proxies as you like.
   
         ![proxyscrape](/assets/img/202407/proxyscrape.png){: width="1100" height="549" .w-75 .normal}
   
-    8. Scroll down to the bottom of the file:
+  10. Scroll down to the bottom of the file:
           ![end](/assets/img/202407/bottom.jpg){: width="1100" height="549" .w-75 .normal}
   
-    9. Copy and paste the proxies in the format shown in the image:
+  11. Copy and paste the proxies in the format shown in the image:
+      
           ![List](/assets/img/202407/copynpaste.jpg){: width="1100" height="549" .w-75 .normal}
-    10. Save and close the file. Check if the connection is successful by using **ping** commmand:
+  13. Save and close the file. Check if the connection is successful by using **ping** commmand:
+
         ```ping www.google.com```
   
   Done! Your system has now been set up to use multiple proxies. The proxies will be used, but to be safe, restart the system.

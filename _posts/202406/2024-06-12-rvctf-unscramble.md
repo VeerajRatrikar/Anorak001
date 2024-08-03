@@ -127,7 +127,7 @@ pin: true
     5. Reverse the String:
           - Reverse the string obtained from the Base64 decode.
     6. Base64 Decode Again:
-          = Base64 decode the final reversed string to obtain the original flag.
+          - Base64 decode the final reversed string to obtain the original flag.
 
 ### Python Code:
    - Below is the python code that I wrote after following through the above steps:
